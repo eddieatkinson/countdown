@@ -4,45 +4,53 @@
 	<title>Countdown to Graduation</title>
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 </head>
 <body>
 	<h1>Countdown Till Graduation Day!</h1>
-	<div id="timer-div">
-		<div class="big-weeks">
+	<div id="timer-div row">
+		<div class="col-xs-1">
+		</div>
+		<div class="big-weeks col-xs-2">
+			<canvas id="canvas" width="200px" height="200px"></canvas>
 			<div class="time-unit">
 				<span class="weeks">0</span>
 				<span class="small-text">Weeks</span>
 			</div>
 		</div>
-		<div class="big-days">
+		<div class="big-days col-xs-2">
+			<canvas id="canvas2" width="200px" height="200px"></canvas>
 			<div class="time-unit">
 				<span class="days">0</span>
 				<span class="small-text">Days</span>
 			</div>
 		</div>
-		<div class="big-hours">
+		<div class="big-hours col-xs-2">
+			<canvas id="canvas3" width="200px" height="200px"></canvas>
 			<div class="time-unit">
 				<span class="hours">0</span>
 				<span class="small-text">Hours</span>
 			</div>
 		</div>
-		<div class="big-minutes">
+		<div class="big-minutes col-xs-2">
+			<canvas id="canvas4" width="200px" height="200px"></canvas>
 			<div class="time-unit">
 				<span class="minutes">0</span>
 				<span class="small-text">Minutes</span>
 			</div>
 		</div>
-		<div class="big-seconds">
+		<div class="big-seconds col-xs-2">
+			<canvas id="canvas5" width="200px" height="200px"></canvas>
 			<div class="time-unit">
 				<span class="seconds">0</span>
 				<span class="small-text">Seconds</span>
 			</div>
 		</div>
+		<div class="col-xs-1">
+		</div>
 
 	</div>
-	<canvas id="canvas" width="500px" height="500px"></canvas>
 	<script type="text/javascript" src="scripts.js"></script>
 
 </body>
