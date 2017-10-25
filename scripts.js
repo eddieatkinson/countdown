@@ -94,19 +94,19 @@ var canvas2 = document.getElementById('canvas2');
 
 var context2 = canvas2.getContext('2d');
 
-function Ball(x, y){
-	this.x = x;
-	this.y = y;
-	this.sr = 0;
-	this.xDirection = 0;
-	this.yDirection = 1;
-	// ending radians
-	this.er = Math.PI * 2;
-	this.randX = Math.ceil(Math.random() * 15);
-	this.randY = Math.ceil(Math.random() * 15);
-	this.drawBall = this.drawBall.bind(this);
-	this.updateBallPosition = this.updateBallPosition.bind(this);
-}
+// function Ball(x, y){
+// 	this.x = x;
+// 	this.y = y;
+// 	this.sr = 0;
+// 	this.xDirection = 0;
+// 	this.yDirection = 1;
+// 	// ending radians
+// 	this.er = Math.PI * 2;
+// 	this.randX = Math.ceil(Math.random() * 15);
+// 	this.randY = Math.ceil(Math.random() * 15);
+// 	this.drawBall = this.drawBall.bind(this);
+// 	this.updateBallPosition = this.updateBallPosition.bind(this);
+// }
 
 Ball.prototype.radius = 50;
 Ball.prototype.drawBall = function(){
@@ -153,19 +153,19 @@ var canvas3 = document.getElementById('canvas3');
 
 var context3 = canvas3.getContext('2d');
 
-function Ball(x, y){
-	this.x = x;
-	this.y = y;
-	this.sr = 0;
-	this.xDirection = 0;
-	this.yDirection = 1;
-	// ending radians
-	this.er = Math.PI * 2;
-	this.randX = Math.ceil(Math.random() * 15);
-	this.randY = Math.ceil(Math.random() * 15);
-	this.drawBall = this.drawBall.bind(this);
-	this.updateBallPosition = this.updateBallPosition.bind(this);
-}
+// function Ball(x, y){
+// 	this.x = x;
+// 	this.y = y;
+// 	this.sr = 0;
+// 	this.xDirection = 0;
+// 	this.yDirection = 1;
+// 	// ending radians
+// 	this.er = Math.PI * 2;
+// 	this.randX = Math.ceil(Math.random() * 15);
+// 	this.randY = Math.ceil(Math.random() * 15);
+// 	this.drawBall = this.drawBall.bind(this);
+// 	this.updateBallPosition = this.updateBallPosition.bind(this);
+// }
 
 Ball.prototype.radius = 50;
 Ball.prototype.drawBall = function(){
@@ -212,19 +212,19 @@ var canvas4 = document.getElementById('canvas4');
 
 var context4 = canvas4.getContext('2d');
 
-function Ball(x, y){
-	this.x = x;
-	this.y = y;
-	this.sr = 0;
-	this.xDirection = 0;
-	this.yDirection = 1;
-	// ending radians
-	this.er = Math.PI * 2;
-	this.randX = Math.ceil(Math.random() * 15);
-	this.randY = Math.ceil(Math.random() * 15);
-	this.drawBall = this.drawBall.bind(this);
-	this.updateBallPosition = this.updateBallPosition.bind(this);
-}
+// function Ball(x, y){
+// 	this.x = x;
+// 	this.y = y;
+// 	this.sr = 0;
+// 	this.xDirection = 0;
+// 	this.yDirection = 1;
+// 	// ending radians
+// 	this.er = Math.PI * 2;
+// 	this.randX = Math.ceil(Math.random() * 15);
+// 	this.randY = Math.ceil(Math.random() * 15);
+// 	this.drawBall = this.drawBall.bind(this);
+// 	this.updateBallPosition = this.updateBallPosition.bind(this);
+// }
 
 Ball.prototype.radius = 50;
 Ball.prototype.drawBall = function(){
@@ -271,19 +271,19 @@ var canvas5 = document.getElementById('canvas5');
 
 var context5 = canvas5.getContext('2d');
 
-function Ball(x, y){
-	this.x = x;
-	this.y = y;
-	this.sr = 0;
-	this.xDirection = 0;
-	this.yDirection = 1;
-	// ending radians
-	this.er = Math.PI * 2;
-	this.randX = Math.ceil(Math.random() * 15);
-	this.randY = Math.ceil(Math.random() * 15);
-	this.drawBall = this.drawBall.bind(this);
-	this.updateBallPosition = this.updateBallPosition.bind(this);
-}
+// function Ball(x, y){
+// 	this.x = x;
+// 	this.y = y;
+// 	this.sr = 0;
+// 	this.xDirection = 0;
+// 	this.yDirection = 1;
+// 	// ending radians
+// 	this.er = Math.PI * 2;
+// 	this.randX = Math.ceil(Math.random() * 15);
+// 	this.randY = Math.ceil(Math.random() * 15);
+// 	this.drawBall = this.drawBall.bind(this);
+// 	this.updateBallPosition = this.updateBallPosition.bind(this);
+// }
 
 Ball.prototype.radius = 50;
 Ball.prototype.drawBall = function(){
