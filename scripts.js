@@ -21,7 +21,8 @@ function updateTimer(){
 var rightNow = new Date();
 var endDate = new Date("January 10, 2018");
 var timeLeft = endDate.getTime() - rightNow.getTime();
-var partialSeconds = ((timeLeft / 1000) % 60) - parseInt((timeLeft / 1000) % 60);
+var partialSeconds = (parseInt(timeLeft / 1000) % 60) - parseInt((timeLeft / 1000) % 60);
+var partialMinutes = (parseInt(timeLeft / 1000 * 60) % 60) - parseInt((timeLeft / 1000 * 60) % 60);
 // console.log(partialSeconds)
 
 setInterval(function(){
@@ -240,22 +241,38 @@ Ball.prototype.updateBallPosition = function(){
 	}
 	if(this.y >= 200 - this.radius){
 		this.yDirection = -this.yDirection
+		randR = Math.ceil(Math.random() * 255);
+		randG = Math.ceil(Math.random() * 255);
+		randB = Math.ceil(Math.random() * 255);
+		context4.fillStyle = `rgb(${randR}, ${randG}, ${randB})`;
+		// theBall5.radius = Math.ceil(Math.random() * 100);
 	}
 	if(this.x <= this.radius){
 		this.xDirection = -this.xDirection;
 	}
 	if(this.y <= this.radius){
 		this.yDirection = -this.yDirection
+		// randR = Math.ceil(Math.random() * 255);
+		// randG = Math.ceil(Math.random() * 255);
+		// randB = Math.ceil(Math.random() * 255);
+		// context5.fillStyle = `rgb(${randR}, ${randG}, ${randB})`;
+		// theBall5.radius = Math.ceil(Math.random() * 100);
 	}
 	// this.x += this.randX * this.xDirection;
-	this.y += this.randY * this.yDirection;
+	this.y +=  3.333333333 * this.yDirection;
 }
 
+var posY4;
+if(partialMinutes >= .5){
+	posY4 = 50 + 200 * (partialMinutes - .5);
+}else{
+	posY4 = 50 + 200 * (.5 - partialMinutes);
+}
 
-theBall4 = new Ball(100, 100);
+theBall4 = new Ball(100, posY4);
 // console.log(secondsBall);
 
-var ball_interval4 = setInterval(theBall4.updateBallPosition, 50);
+var ball_interval4 = setInterval(theBall4.updateBallPosition, 1000);
 
 canvas.addEventListener("click", function(event){
 	console.log(event);
@@ -317,7 +334,7 @@ Ball.prototype.updateBallPosition = function(){
 		// theBall5.radius = Math.ceil(Math.random() * 100);
 	}
 	// this.x += this.randX * this.xDirection;
-	this.y +=  10 * this.yDirection;
+	this.y +=  5 * this.yDirection;
 }
 
 var posY5;
@@ -330,7 +347,7 @@ if(partialSeconds >= .5){
 theBall5 = new Ball(100, posY5);
 // console.log(secondsBall);
 
-var ball_interval5 = setInterval(theBall5.updateBallPosition, 50);
+var ball_interval5 = setInterval(theBall5.updateBallPosition, 25);
 
 // canvas.addEventListener("click", function(event){
 // 	console.log(event);
